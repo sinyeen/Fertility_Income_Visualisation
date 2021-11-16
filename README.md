@@ -3,6 +3,8 @@
 
 This shiny application is designed to interactively visualise the relationship between income and fertility based on the collected data which are wrangled and presented in the `Data Table` Tab. The main question for the visualization project is “Why is fertility rate higher in poor countries?”, and the sub-questions of it are “How education, child mortality rate, and social security system affect the fertility rates?” and “How gross domestic product (GDP) plays a role in the distribution of these three factors?” 
 
+**APP Link:** [Visualisation Dashboard: Link between Fertility Rate and Income](https://sinyee-neo.shinyapps.io/Fertility_Income_Link/)
+
 ## Navigation - Six Interfaces
 
 1. Main page: The main page provide introduction of the application, the source of data used, application usage for each design, and shiny package used for the application. 

@@ -3,8 +3,6 @@
 
 This shiny application is designed to interactively visualise the relationship between income and fertility based on the collected data which are wrangled and presented in the `Data Table` Tab. The main question for the visualization project is “Why is fertility rate higher in poor countries?”, and the sub-questions of it are “How education, child mortality rate, and social security system affect the fertility rates?” and “How gross domestic product (GDP) plays a role in the distribution of these three factors?” 
 
-<br>
-
 ## Navigation - Six Interfaces
 
 1. Main page: The main page provide introduction of the application, the source of data used, application usage for each design, and shiny package used for the application. 
@@ -19,27 +17,8 @@ This shiny application is designed to interactively visualise the relationship b
 
 6. Data Table: Wrangled and cleaned dataset used in the application.
 
-<br>
-
-## Data
-Data Wrangling and data cleansing are carried out to clean, restructure and enrich the raw data into one format that is suitable for data analysis. The final dataset is presented in the `Data Table` Tab. The data used by this shiny application are:
-
-**Dataset 1:** GDP per capita across regions 1960 – 2019. It is a tabular data containing 265  rows x 64 column. [Link](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
-
-**Dataset 2:** Fertility rates (Total, births per women) across regions 1960 – 2019. It is a tabular data that contains 265 rows x 64 columns. [Link](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN)
-
-**Dataset 3:** National average learning outcomes across regions 1700 – 2015. Is is a tabular data that contains 20251 rows x 6 columns. [Link](https://ourworldindata.org/grapher/learning-outcomes-1985-vs-2015)
-
-**Dataset 4:** Mean years of schooling across regions 1870 – 2017. It is a tabular data that contains 7764 rows x 4 columns. [Link](https://ourworldindata.org/grapher/learning-outcomes-1985-vs-2015)
-
-**Dataset 5:** Infant mortality rates cross the globe (total, deaths/1000 live births) 1960 – 2019. It is a tabular data containing 264  rows x 64 columns. [Link](https://data.worldbank.org/indicator/SP.DYN.IMRT.IN)
-
-<br>
-
 ## Application usage
 As mentioned above, the shiny application consists of 3 main interactive designs. All of the combinations are able to provide a solution for all questions. Each combination is able to present the detailed relationships between the education and child mortality rate with the GDP and fertility rate.
-
-<br>
 
 ### Design 1: Map and regression plot
 **Map** 
@@ -62,7 +41,32 @@ The regression plot and the summary statistics can indicate how correlated are t
 
 **Scatterplots** combine with the drill down function of bar chart to present the general trend of each variable in different income group and regions within specific income group. From the plots, user is able to indicate how fertility rate is affected by the mean schooling year and mortality rate, and how mean schooling year and mortality rate are affected by the GDP. 
 
-<br>
+## Data
+Data Wrangling and data cleansing are carried out to clean, restructure and enrich the raw data into one format that is suitable for data analysis. The final dataset is presented in the `Data Table` Tab. The data used by this shiny application are:
+
+**Dataset 1:** GDP per capita across regions 1960 – 2019. It is a tabular data containing 265  rows x 64 column. [Link](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
+
+**Dataset 2:** Fertility rates (Total, births per women) across regions 1960 – 2019. It is a tabular data that contains 265 rows x 64 columns. [Link](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN)
+
+**Dataset 3:** National average learning outcomes across regions 1700 – 2015. Is is a tabular data that contains 20251 rows x 6 columns. [Link](https://ourworldindata.org/grapher/learning-outcomes-1985-vs-2015)
+
+**Dataset 4:** Mean years of schooling across regions 1870 – 2017. It is a tabular data that contains 7764 rows x 4 columns. [Link](https://ourworldindata.org/grapher/learning-outcomes-1985-vs-2015)
+
+**Dataset 5:** Infant mortality rates cross the globe (total, deaths/1000 live births) 1960 – 2019. It is a tabular data containing 264  rows x 64 columns. [Link](https://data.worldbank.org/indicator/SP.DYN.IMRT.IN)
+
+### References
+
+Mean years of schooling (years) |Human Development Reports. (2019). Retrieved September 18, 2020, from http://hdr.undp.org/en/indicators/103006 
+
+Data. (n.d.). Retrieved September 18, 2020, from https://www.gapminder.org/data/ 
+
+Fertility rate, total (births per woman) | Data. (n.d.). Retrieved September 18, 2020, from https://data.worldbank.org/indicator/SP.DYN.TFRT.IN 
+
+GDP (current US$) | Data. (2019). The World Bank. https://data.worldbank.org/indicator/NY.GDP.MKTP.CD 
+
+Mortality rate, infant (per 1,000 live births) | Data. (n.d.). Retrieved September 18, 2020, from https://data.worldbank.org/indicator/SP.DYN.IMRT.IN 
+
+World Bank Country and Lending Groups – World Bank Data Help Desk. (n.d.). Retrieved September 18, 2020, from https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups?fbclid=IwAR1tYxFXXlXf7Adc3k4-OcYOEvrgeybxqDNsSdtZz0hZave1oDysSukHyX0 
 
 ## Package dependencies & credits
 

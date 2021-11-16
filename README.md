@@ -17,29 +17,89 @@ This shiny application is designed to interactively visualise the relationship b
 
 6. Data Table: Wrangled and cleaned dataset used in the application.
 
-## Application usage
-As mentioned above, the shiny application consists of 3 main interactive designs. All of the combinations are able to provide a solution for all questions. Each combination is able to present the detailed relationships between the education and child mortality rate with the GDP and fertility rate.
-
-### Design 1: Map and regression plot
-**Map** 
+## Design 1: Map and regression plot
+* **Map** 
 The map provides a clear display of the selected variables in each country. The different in the values of the variables can be differentiated with the colour gradient and the size of the circles. The darker and larger of the colour and circle size respective, the larger the value of the selected variables. 
 
-**Regression plot**
+* **Regression plot**
 The regression plot and the summary statistics can indicate how correlated are the selected variables. The plot provides an overall display a general trend that gives a clear idea of how education and child mortality rate are effected by the GDP and how these two variables affect the fertility rate, and their corresponding correlation.
 
-### Design 2: Boxplots, histograms and scatterplot
+**Instructions for viewing and exploring the narrative visualisaiton of Design 1: Map and regression plot:**
 
-**Boxplots** provide a good way to view the values of each variable by different categorical variables. For example, if the X-axis of the boxplot is chosen as “Income Levels”, the distribution of the values of the selected variables (y-axis) can be compared with different income groups, if the X-axis of the boxplot is chosen as “Region”, the distribution of the values of the selected variables (y-axis) can be compared with different regions of the world. 
+#### Map
+User can use the dropdown menus to select different variables to be presented in the map with different colour gradient and circle sizes.The darker and larger of the colour and circle size respective, the larger the value of the selected variables. 
 
-**Scatterplot** can show the relationship between different numerical variables and see how each variable affect one another. By grouping the categorical variables in different colours, the trend of different groups (i.e., regions and income levels) can be easily compared. ‘
+![alt text](map.png)
 
-**Histograms** show the distribution of the selected variables for the scatterplot. Although histograms are not able to show the relationship between the variable, it is good to see the general distribution of the selected variables for the scatterplot. Also, by looking at the mode of the histograms, the user know the most count of the value of the selected variables.
+Figure 1. Interactive map with user guide
 
-### Design 3: Bar charts and scatterplots
+#### Regression
+The selected y value (colour) and x value (size) will go be used to plot the regression line and get the summary statistics (correlation and averages) of the variables. The regression plot is also interactive, and size and alpha can also be adjusted. The user is able to hover over the datapoints on the regression plot, and this will tell the user the details of the points.
 
-**Bar Chart** can provide an overall comparison on the fertility rate with different income group and regions within specific income group. It is a two levels bar chart that enable user to see how the fertility rate of different country regions from different income group differ from each other. For example, if the user select the bar of "Low income", some of the trend such as Mean Schooling Year vs log(GDP) will not show a correlated trend due to the extreme and low variation of values. "Lower middle income" and "Upper middle income" on the other hand will give a better closed to linear trend. 
+![alt text](regression.png)
 
-**Scatterplots** combine with the drill down function of bar chart to present the general trend of each variable in different income group and regions within specific income group. From the plots, user is able to indicate how fertility rate is affected by the mean schooling year and mortality rate, and how mean schooling year and mortality rate are affected by the GDP. 
+## Design 2: Boxplots, histograms and scatterplot
+
+* **Boxplots** provide a good way to view the values of each variable by different categorical variables. For example, if the X-axis of the boxplot is chosen as “Income Levels”, the distribution of the values of the selected variables (y-axis) can be compared with different income groups, if the X-axis of the boxplot is chosen as “Region”, the distribution of the values of the selected variables (y-axis) can be compared with different regions of the world. 
+
+* **Scatterplot** can show the relationship between different numerical variables and see how each variable affect one another. By grouping the categorical variables in different colours, the trend of different groups (i.e., regions and income levels) can be easily compared. ‘
+
+* **Histograms** show the distribution of the selected variables for the scatterplot. Although histograms are not able to show the relationship between the variable, it is good to see the general distribution of the selected variables for the scatterplot. Also, by looking at the mode of the histograms, the user know the most count of the value of the selected variables.
+
+**Instructions for viewing and exploring the narrative visualisaiton of Design 2: Boxplots, histograms and scatterplot:**
+
+![alt text](boxmain.png)
+
+Figure 3. Interactive boxplot with user guide
+
+#### <u>Boxplot</u>
+The dropdown menus on the side of the page are for the user to select the x-axis, y-axis, and colour by options. The “Y-axis” dropdown menu is for both boxplot and scatter plot, the user is able to choose between the variables related to the research topic, that are fertility rate, GDP, child mortality rate, social security system and mean schooling years. The “Boxplot X-axis” dropdown menu boxplot has the options of categorical variables such as world regions and income levels. There is also descriptive text at the bottom of the plot to update the user with his/her selection. 
+
+![alt text](boxplot.png)
+
+Figure 3. Interactive boxplot with user guide
+
+
+#### Scatterplot
+The user is able to hover over the datapoints on the scatterplot, and this will tell the user the details of the data point. The user has the option to add the best fit line to the scatter plot by ticking the “add best fit line to Scatterplot” checkbox. The checkbox is ticked by default. There is also a “Colour by” dropdown menu to select which categorical variable to group the data. The selection of the user will be shown in the descriptive text below the plot. The opacity of the datapoints in the scatter plot need to to be adjusted to view the best fit line clearer. The opacity and size of the datapoints can be adjusted with the “Alpha” and “size” slider. 
+
+![alt text](scatter.png)
+
+Figure 4. Interactive boxplot with user guide
+
+The following selection combinations are suggested to the user to answer the questions of the research topic.
+
+![alt text](table.png) 
+
+#### Histogram
+Interactive histograms (hover over for values) for X and Y selections from dropdown menu. Number of bins can be selected from the slidebar. The user is able to hover over the datapoints on the bins of histograms, and this will tell the user the details of the bin.
+ 
+![alt text](bar.png)
+
+Figure 5. Interactive boxplot with user guide
+
+
+## Design 3: Bar charts and scatterplots
+
+* **Bar Chart** can provide an overall comparison on the fertility rate with different income group and regions within specific income group. It is a two levels bar chart that enable user to see how the fertility rate of different country regions from different income group differ from each other. For example, if the user select the bar of "Low income", some of the trend such as Mean Schooling Year vs log(GDP) will not show a correlated trend due to the extreme and low variation of values. "Lower middle income" and "Upper middle income" on the other hand will give a better closed to linear trend. 
+
+* **Scatterplots** combine with the drill down function of bar chart to present the general trend of each variable in different income group and regions within specific income group. From the plots, user is able to indicate how fertility rate is affected by the mean schooling year and mortality rate, and how mean schooling year and mortality rate are affected by the GDP. 
+
+**Instructions for viewing and exploring the narrative visualisaiton of Design 3: Bar charts and scatterplots:**
+
+#### Bar Chart
+The bar chart contains two levels where the user is able to click on the bar to drill down into sub-categories of the chosen category. In this case, the first level categories are the income levels, the second level categories are the world regions. Also, the user is able to hover over the bars on the bar chart, and this will tell the user the average of the fertility rate for that particular category.
+
+![alt text](bar.png)
+
+Figure 6. Interactive map with user guide
+
+#### Scatterplot
+Depending on which bar the user choose, the scatterplots will be based on the selected category. The user is able to hover over the datapoints on the scatterplots, and this will tell the user the details of the points.
+
+![alt text](dot.png)
+
+Figure 6. Interactive map with user guide
 
 ## Data
 Data Wrangling and data cleansing are carried out to clean, restructure and enrich the raw data into one format that is suitable for data analysis. The final dataset is presented in the `Data Table` Tab. The data used by this shiny application are:

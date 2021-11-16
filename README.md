@@ -1,4 +1,6 @@
 # R-shinny Visualisation - Link between Fertility Rate and Income :baby:
+![](https://img.shields.io/badge/Author-SinYee-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/Tool-RShiny-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
+
 ## Introduction
 
 This shiny application is designed to interactively visualise the relationship between income and fertility based on the collected data which are wrangled and presented in the `Data Table` Tab. The main question for the visualization project is “Why is fertility rate higher in poor countries?”, and the sub-questions of it are “How education, child mortality rate, and social security system affect the fertility rates?” and “How gross domestic product (GDP) plays a role in the distribution of these three factors?” 

@@ -1,0 +1,29 @@
+---
+title: "usemap"
+author: "sinyee"
+date: "11/15/2020"
+output: html_document
+runtime: shiny
+---
+
+# Map and regression plot
+## User Guide
+This section contains instructions for viewing and exploring the narrative visualisaiton of Design 1: Map and regression plot.
+
+### Design 1: Contains a map and a regression plot with statistical summary of the plot
+#### Map
+User can use the dropdown menus to select different variables to be presented in the map with different colour gradient and circle sizes.The darker and larger of the colour and circle size respective, the larger the value of the selected variables. 
+
+<br>  
+![](map.png)  
+Figure 1. Interactive map with user guide
+<br>
+
+#### Regression
+The selected y value (colour) and x value (size) will go be used to plot the regression line and get the summary statistics (correlation and averages) of the variables. The regression plot is also interactive, and size and alpha can also be adjusted. The user is able to hover over the datapoints on the regression plot, and this will tell the user the details of the points.
+
+<br>  
+![](regression.png)  
+Figure 2. Interactive map with user guide
+<br>
+
